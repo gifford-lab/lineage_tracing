@@ -56,14 +56,15 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 ## Results
 
 #### Integrated barcodes
-Here is a summary of the statistics of the four experiments:
+
++ Summary of the statistics of the four experiments:
 ![Integrated barcodes analysis](https://github.com/gifford-lab/lineage_tracing/blob/master/results/round2_Sept_2016/integrated.png?raw=true)
 
-Some tables are put under folders corresponding to each of the [group](https://github.com/gifford-lab/lineage_tracing/tree/master/results/round2_Sept_2016/fth1_time1_rep2/)
-+ \*.barcode: the unique barcodes and the number of cells they show up in before filtering (see the above section)
-+ \*.barcode.afterprocessing: same as above but after filtering
-+ \*.barcode.afterprocessing.bi: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
-+ \*.familyanalysis: the result of family analysis. Read the header for the meaning of each column.
++ Some tables are put under [folders](https://github.com/gifford-lab/lineage_tracing/tree/master/results/round2_Sept_2016/fth1_time1_rep2/) corresponding to each of the experiments.
+	+ \*.barcode: the unique barcodes and the number of cells they show up in before filtering (see the above section)
+	+ \*.barcode.afterprocessing: same as above but after filtering
+	+ \*.barcode.afterprocessing.bi: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
+	+ \*.familyanalysis.csv: the result of family analysis. Read the header for the meaning of each column.
 
 #### Barcodelet
 ![Barcodelet analysis](https://github.com/gifford-lab/lineage_tracing/blob/master/results/round2_Sept_2016/barcodelet.png?raw=true)
