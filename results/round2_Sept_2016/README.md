@@ -47,24 +47,32 @@ Detailed pipeline:
 #### Further filter lineage barcodes and perform lineage analysis
 Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage_tracing/blob/master/results/round2_Sept_2016/notebook.ipynb) (function `analysis2` and `family2`)
 
-1.	For each cell, first filter out all barcodes with less than 10 reads. Among the remaining barcodes, keep the barcode with the most reads and retrain the second ranking barcode too if it has more than half of the read count of the top ranking barcode.
+1.	For each cell, first filter out all barcodes with less than X reads, where we tried different values of X (see Result section). Among the remaining barcodes, keep the barcode with the most reads and retrain the second ranking barcode too if it has more than half of the read count of the top ranking barcode.
 
 2. Calculate the pair-wise (cell) distance of all the cells, where if at least one barcode in cell A and one barcode in cell B has a distance smaller than 0 with any base that is 'N' ignored,  the distance between these two cell is 0. Otherwise, it is 1.
 
 3. Perform hierarchical clustering on the cell using the distance matrix obtained above so that the closest distance between two cluster >= 1.  The closest distance of two cluster is calculated as the smallest distance between any two cell in these two cluster.
 
 ## Results
+**Below all the `thresh` denotes the read threshold used to filter in (1) of the previous section.**
 
 #### Integrated barcodes
 
-+ Summary of the statistics of the four experiments:
-![Integrated barcodes analysis](https://github.com/gifford-lab/lineage_tracing/blob/master/results/round2_Sept_2016/integrated.png?raw=true)
++ Summary of the statistics:
+	+ `stats/stats.thresh.csv`: statistics of the reads
+	+ `stats/familystats.thresh.csv`: statistics of family analysis
 
-+ Some tables are put under [folders](https://github.com/gifford-lab/lineage_tracing/tree/master/results/round2_Sept_2016/fth1_time1_rep2/) corresponding to each of the experiments.
-	+ `barcodecoverage`: the unique barcodes and the number of cells they show up in before filtering (see the above section)
-	+ `barcodecoverage.afterprocessing`: same as above but after filtering
-	+ `barcode.afterprocessing.bi`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
-	+ `familyanalysis.csv`: the result of family analysis. Read the header for the meaning of each column.
++ Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
+	+ `bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
+	+ `bcCoverage.postfilter.thresh`: same as above but after filtering
+	+ `bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
+	+ `familyanalysis.thresh.csv`: the result of family analysis. Read the header for the meaning of each column.
 
 #### Barcodelet
-![Barcodelet analysis](https://github.com/gifford-lab/lineage_tracing/blob/master/results/round2_Sept_2016/barcodelet.png?raw=true)
++ Summary of the statistics:
+	+ `stats/barcodelet.stats.thresh.csv`: statistics of the reads
+
++ Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
+	+ `barcodelet.bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
+	+ `barcodelet.bcCoverage.postfilter.thresh`: same as above but after filtering
+	+ `barcodelet.bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.

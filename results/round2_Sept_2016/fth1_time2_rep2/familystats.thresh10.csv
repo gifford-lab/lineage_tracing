@@ -1,0 +1,4 @@
+Item,mESC_fth1_time1_rep1,mESC_fth1_time1_rep2,mESC_fth1_time2_rep1,mESC_fth1_time2_rep2,Thresh
+# of cells included in family analysis,8,217,143,232,10
+# of lineages,1,9,4,6,10
+Size of lineages,[8],"[165, 14, 11, 10, 6, 5, 3, 2, 1]","[132, 5, 4, 2]","[211, 11, 5, 3, 1, 1]",10

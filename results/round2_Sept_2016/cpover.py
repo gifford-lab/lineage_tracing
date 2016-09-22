@@ -8,7 +8,14 @@ for time in range(2):
             system('rm -r '+outdir)
 	makedirs(outdir)
 	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*.csv'),outdir]))
-	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*barcode*'),outdir]))
+	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*bcCoverage*'),outdir]))
         tfiles = [f for f in listdir(outdir) if isfile(join(outdir, f))]
         for x in tfiles:
             system(' '.join(['mv',join(outdir,x),join(outdir,'.'.join(x.split('.')[1:]))]))
+
+
+outdir = 'stats'
+if exists(outdir):
+    system('rm -r '+outdir)
+makedirs(outdir)
+system(' '.join(['cp -r',join(topdir,'*stats*'),outdir]))
