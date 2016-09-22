@@ -58,9 +58,7 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 
 #### Integrated barcodes
 
-+ Summary of the statistics:
-	+ `stats/stats.thresh.csv`: statistics of the reads
-	+ `stats/familystats.thresh.csv`: statistics of family analysis
++ Summary of the statistics: `stats/fth1.stats.thresh.csv`
 
 + Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
 	+ `bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
@@ -69,8 +67,7 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 	+ `familyanalysis.thresh.csv`: the result of family analysis. Read the header for the meaning of each column.
 
 #### Barcodelet
-+ Summary of the statistics:
-	+ `stats/barcodelet.stats.thresh.csv`: statistics of the reads
++ Summary of the statistics: `stats/barcodelet.stats.thresh.csv`
 
 + Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
 	+ `barcodelet.bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
