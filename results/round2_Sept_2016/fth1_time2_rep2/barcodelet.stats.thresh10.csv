@@ -1,9 +1,0 @@
-Item,mESC_fth1_time1_rep1,mESC_fth1_time1_rep2,mESC_fth1_time2_rep1,mESC_fth1_time2_rep2,Thresh
-# of reads,2998912,10967607,6146482,8027986,10
-# of transcript molecules (unique UMI),173648,128075,135995,173619,10
-# of transcript molecules (unique UMI) w. bc,296,103,228,115,10
-# of cells,196,218,144,232,10
-# of barcodes,77,40,67,60,10
-# of cells after processing,0,0,0,0,10
-# of barcodes after processing,1,1,1,1,10
-# of barcodes after processing (concat two bc),1,1,1,1,10

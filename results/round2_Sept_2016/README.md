@@ -21,7 +21,7 @@ $REPOHOME/splitreads/run_split_reads.sh
 		python $REPOHOME/indrops_V2/indrops/run.py 2
 	```
 
-#### Extract lineage barcodes
+#### Lineage barcode extraction
 
 ```
 	python $REPOHOME/cell-lineage GROUPNAME TASK
@@ -61,6 +61,7 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 + Summary of the statistics: `stats/fth1.stats.thresh.csv`
 
 + Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
+	+ `raw`: the raw output of `Lineage barcode extraction` before filtering and family analysis
 	+ `bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
 	+ `bcCoverage.postfilter.thresh`: same as above but after filtering
 	+ `bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
@@ -70,6 +71,7 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 + Summary of the statistics: `stats/barcodelet.stats.thresh.csv`
 
 + Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
+	+ `barcodelet.raw`: the raw output of `Lineage barcode extraction` before filtering and family analysis
 	+ `barcodelet.bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
 	+ `barcodelet.bcCoverage.postfilter.thresh`: same as above but after filtering
 	+ `barcodelet.bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.

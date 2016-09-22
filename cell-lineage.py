@@ -1,7 +1,7 @@
 from os import listdir
 from os.path import isfile,join,exists
 from collections import Counter
-import sys
+import sys,pandas as pd
 
 celltype = sys.argv[1] #mESC or endoderm
 analysis = sys.argv[2] #sys or let (for tranditional and barcodelet)
@@ -21,7 +21,7 @@ if not exists(topdir):
     print 'Run preprocess and split first!'
     sys.exit(1)
 
-outputfile = join(topdir0,'post_split','cell-lineage_mapping'+'_quality'+str(quality_thresh)+'_mismatch'+str(clust_mismatch)) + '_prefixsuffixtol'+str(prefix_suffix_tol) + exptcode
+outputfile = join(topdir0,'post_split','cell-lineage_mapping'+'_quality'+str(quality_thresh)+'_mismatch'+str(clust_mismatch)) + '_prefixsuffixtol'+str(prefix_suffix_tol) + exptcode + '.raw.tsv'
 
 ### Functions
 
@@ -181,7 +181,6 @@ for expt in expts:
     print toadd
     output.append(toadd)
 
-with open(outputfile,'w') as f:
-    for x in output:
-        f.write('%s\n' % ('\t'.join(map(str,x))))
+output_pd = pd.DataFrame(output,columns = ['cell','moleculecnt','barcode_moleculecnt','barcodes','barcodereads_split','barcodecnt','readcnt'])
+output_pd.to_csv(outputfile,sep='\t')
 
