@@ -58,20 +58,11 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 
 #### Integrated barcodes
 
-+ Summary of the statistics: `stats/fth1.stats.thresh.csv`
++ `stats` folder: summary of the statistics across four experiments 
 
-+ Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
-	+ `raw`: the raw output of `Lineage barcode extraction` before filtering and family analysis
++ `fth1_timeT_repR` folders: Specific data of each experiment, where `T` is the time point and `R` is the replicate index.
+	+ `raw`: the raw output of `Lineage barcode extraction` before filtering and family analysis, containing the info for all the barcodes for each cell.
 	+ `bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
 	+ `bcCoverage.postfilter.thresh`: same as above but after filtering
 	+ `bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
-	+ `familyanalysis.thresh.csv`: the result of family analysis. Read the header for the meaning of each column.
-
-#### Barcodelet
-+ Summary of the statistics: `stats/barcodelet.stats.thresh.csv`
-
-+ Specific data of each experiment are saved under `fth1_timeT_repR` where `T` is the time point and `R` is the replicate index.
-	+ `barcodelet.raw`: the raw output of `Lineage barcode extraction` before filtering and family analysis
-	+ `barcodelet.bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
-	+ `barcodelet.bcCoverage.postfilter.thresh`: same as above but after filtering
-	+ `barcodelet.bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
+	+ `familyanalysis.thresh.csv`: (fth1 only) the result of family analysis. Read the header for the meaning of each column.

@@ -6,14 +6,17 @@ for time in range(2):
 	outdir = 'fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1))
 	if exists(outdir):
             system('rm -r '+outdir)
-	makedirs(outdir)
-	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*.csv'),outdir]))
+	makedirs(join(outdir,'fth1'))
+        makedirs(join(outdir,'barcodelet'))
+        system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*.csv'),outdir]))
 	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*.raw.tsv'),outdir]))
 	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(str(time+1),str(rep+1)),'post_split','cell*bcCoverage*'),outdir]))
         tfiles = [f for f in listdir(outdir) if isfile(join(outdir, f))]
         for x in tfiles:
-            system(' '.join(['mv',join(outdir,x),join(outdir,'.'.join(x.split('.')[1:]))]))
-
+            if 'barcodelet' in x:
+                system(' '.join(['mv',join(outdir,x),join(outdir,'barcodelet', '.'.join(x.split('.')[2:]))]))
+            else:
+                system(' '.join(['mv',join(outdir,x),join(outdir,'fth1', '.'.join(x.split('.')[1:]))]))
 
 outdir = 'stats'
 if exists(outdir):
