@@ -182,5 +182,5 @@ for expt in expts:
     output.append(toadd)
 
 output_pd = pd.DataFrame(output,columns = ['cell','moleculecnt','barcode_moleculecnt','barcodes','barcodereads_split','barcodecnt','readcnt'])
-output_pd.to_csv(outputfile,sep='\t')
+output_pd.to_csv(outputfile,sep='\t',index=False)
 

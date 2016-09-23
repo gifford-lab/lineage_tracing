@@ -1,6 +1,6 @@
 ## Processing procedure
 #### Split the reads into 8 groups by index barcodes
-Assign each read to the group of which the index barcode is uniquely closest to the read's index barcode. If the closest group is not unique or the closest hamming distance is greater than 2, the read was considered ambiguous and ignored.
+Assign each read to the group of which the index barcode is uniquely closest to the read's index barcode. If the closest group is not unique, the read was considered ambiguous and ignored.
 
 ```
 $REPOHOME/splitreads/run_split_reads.sh
@@ -54,9 +54,7 @@ Detailed implementation in the [notebook](https://github.com/gifford-lab/lineage
 3. Perform hierarchical clustering on the cell using the distance matrix obtained above so that the closest distance between two cluster >= 1.  The closest distance of two cluster is calculated as the smallest distance between any two cell in these two cluster.
 
 ## Results
-**Below all the `thresh` denotes the read threshold used to filter in (1) of the previous section.**
-
-#### Integrated barcodes
+Below all the `thresh` denotes the read threshold used to filter in (1) of the previous section.
 
 + `stats` folder: summary of the statistics across four experiments 
 
