@@ -10,7 +10,7 @@ for idx,time in enumerate(times):
             system('rm -r '+outdir)
 	makedirs(join(outdir,'fth1'))
         makedirs(join(outdir,'barcodelet'))
-        system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(time,rep),'post_split','cell*.csv'),outdir]))
+        system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(time,rep),'post_split','cell*familyanalysis-*.csv'),outdir]))
 	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(time,rep),'post_split','cell*.raw.tsv'),outdir]))
 	system(' '.join(['cp -r',join(topdir,'mESC_fth1_time{0}_rep{1}'.format(time,rep),'post_split','cell*bcCoverage*'),outdir]))
         tfiles = [f for f in listdir(outdir) if isfile(join(outdir, f))]
@@ -25,3 +25,5 @@ if exists(outdir):
     system('rm -r '+outdir)
 makedirs(outdir)
 system(' '.join(['cp -r',join(topdir,'*stats*'),outdir]))
+system(' '.join(['cp -r','/cluster/zeng/notebooks/Lineage/cell-lineage*Copy1*','notebook.ipynb']))
+

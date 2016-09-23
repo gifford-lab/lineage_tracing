@@ -63,4 +63,5 @@ Below all the `thresh` denotes the read threshold used to filter in (1) of the p
 	+ `bcCoverage.thresh`: the unique barcodes and the number of cells in which they show up before filtering (see the previous section)
 	+ `bcCoverage.postfilter.thresh`: same as above but after filtering
 	+ `bcCoverage.postfilter.bi.thresh`: same as above but here for cells with two barcodes left after the filtering, we treat the combination of the barcodes as one 'barcode'.
-	+ `familyanalysis.thresh.csv`: (fth1 only) the result of family analysis. Read the header for the meaning of each column.
+	+ `familyanalysis-cellcentric.thresh.csv`: (fth1 only) the result of family analysis. Read the header for the meaning of each column.
+	+ `familyanalysis-aggregated.thresh.csv`: (fth1 only) aggregated information of each lineage in terms of which barcodes there are.
