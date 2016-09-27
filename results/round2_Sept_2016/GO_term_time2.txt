@@ -1,0 +1,12 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (release 20160715)
+Annotation Version and Release Date:	GO Ontology database  Released 2016-08-22
+Analyzed List:	upload_1 (Mus musculus)
+Reference List:	Mus musculus (all genes in database)
+Bonferroni correction:	true
+GO biological process complete	Mus musculus - REFLIST (22322)	upload_1 (44)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+Unclassified (UNCLASSIFIED)	1892	3	3.73	-	.80	0.00E00

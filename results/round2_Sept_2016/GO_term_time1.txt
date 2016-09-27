@@ -1,0 +1,55 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (release 20160715)
+Annotation Version and Release Date:	GO Ontology database  Released 2016-08-22
+Analyzed List:	upload_1 (Mus musculus)
+Reference List:	Mus musculus (all genes in database)
+Bonferroni correction:	true
+GO biological process complete	Mus musculus - REFLIST (22322)	upload_1 (48)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+signal transduction involved in regulation of gene expression (GO:0023019)	23	4	.05	+	80.88	1.66E-03
+endoderm formation (GO:0001706)	32	5	.07	+	72.66	7.71E-05
+regulation of cardiocyte differentiation (GO:1905207)	41	4	.09	+	45.37	1.63E-02
+endoderm development (GO:0007492)	65	6	.14	+	42.93	5.27E-05
+formation of primary germ layer (GO:0001704)	87	6	.19	+	32.07	2.93E-04
+gastrulation (GO:0007369)	139	6	.30	+	20.07	4.48E-03
+lung development (GO:0030324)	197	7	.42	+	16.52	1.75E-03
+respiratory tube development (GO:0030323)	200	7	.43	+	16.28	1.94E-03
+respiratory system development (GO:0060541)	227	7	.49	+	14.34	4.50E-03
+in utero embryonic development (GO:0001701)	424	10	.91	+	10.97	1.62E-04
+tube morphogenesis (GO:0035239)	387	8	.83	+	9.61	1.30E-02
+chordate embryonic development (GO:0043009)	688	11	1.48	+	7.44	1.47E-03
+embryo development ending in birth or egg hatching (GO:0009792)	695	11	1.49	+	7.36	1.62E-03
+tissue morphogenesis (GO:0048729)	581	9	1.25	+	7.20	2.87E-02
+embryonic morphogenesis (GO:0048598)	583	9	1.25	+	7.18	2.95E-02
+negative regulation of multicellular organismal process (GO:0051241)	1059	16	2.28	+	7.03	2.71E-06
+embryo development (GO:0009790)	1036	13	2.23	+	5.84	1.51E-03
+negative regulation of molecular function (GO:0044092)	891	11	1.92	+	5.74	1.84E-02
+epithelium development (GO:0060429)	978	12	2.10	+	5.71	6.22E-03
+tissue development (GO:0009888)	1508	17	3.24	+	5.24	5.51E-05
+negative regulation of response to stimulus (GO:0048585)	1286	13	2.77	+	4.70	1.72E-02
+anatomical structure morphogenesis (GO:0009653)	2100	21	4.52	+	4.65	3.85E-06
+cell development (GO:0048468)	1543	15	3.32	+	4.52	3.73E-03
+cell surface receptor signaling pathway (GO:0007166)	1601	14	3.44	+	4.07	3.46E-02
+regulation of multicellular organismal development (GO:2000026)	1752	15	3.77	+	3.98	1.84E-02
+animal organ development (GO:0048513)	2740	23	5.89	+	3.90	1.20E-05
+response to organic substance (GO:0010033)	2031	16	4.37	+	3.66	2.26E-02
+regulation of multicellular organismal process (GO:0051239)	2623	20	5.64	+	3.55	1.21E-03
+regulation of signal transduction (GO:0009966)	2333	17	5.02	+	3.39	2.86E-02
+regulation of cell communication (GO:0010646)	2642	19	5.68	+	3.34	7.12E-03
+regulation of signaling (GO:0023051)	2663	19	5.73	+	3.32	8.04E-03
+negative regulation of biological process (GO:0048519)	4288	29	9.22	+	3.15	3.07E-06
+system development (GO:0048731)	3775	25	8.12	+	3.08	2.10E-04
+negative regulation of cellular process (GO:0048523)	3969	26	8.53	+	3.05	1.10E-04
+regulation of response to stimulus (GO:0048583)	3114	20	6.70	+	2.99	1.93E-02
+multicellular organism development (GO:0007275)	4344	27	9.34	+	2.89	1.45E-04
+anatomical structure development (GO:0048856)	4722	28	10.15	+	2.76	1.78E-04
+single-multicellular organism process (GO:0044707)	4999	29	10.75	+	2.70	1.27E-04
+single-organism developmental process (GO:0044767)	4987	28	10.72	+	2.61	6.17E-04
+developmental process (GO:0032502)	5031	28	10.82	+	2.59	7.52E-04
+multicellular organismal process (GO:0032501)	6664	31	14.33	+	2.16	5.46E-03
+biological regulation (GO:0065007)	10948	39	23.54	+	1.66	3.30E-02
+single-organism process (GO:0044699)	11808	42	25.39	+	1.65	3.00E-03
+Unclassified (UNCLASSIFIED)	1892	1	4.07	-	.25	0.00E00
