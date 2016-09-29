@@ -6,4 +6,5 @@ python cell-lineage.py mESC_fth1_time1_rep1 let
 python cell-lineage.py mESC_fth1_time1_rep2 let
 python cell-lineage.py mESC_fth1_time2_rep1 let
 python cell-lineage.py mESC_fth1_time2_rep2 let
+python cell-lineage.py mESC_fth1_timeboth_rep2 sys
 python cell-lineage.py mESC_fth1_timeboth_rep2 let
